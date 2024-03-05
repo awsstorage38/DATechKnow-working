@@ -102,9 +102,9 @@
                 padding: 20px;
             }
 
-            .toggle-dot {
+    /*        .toggle-dot {
         /* Your dot styles (e.g., a small circle) */
-        position: fixed;
+   /*     position: fixed;
         bottom: 20px;
         right: 20px;
         width: 20px;
@@ -112,7 +112,24 @@
         background-color: #5828df;
         border-radius: 50%;
         cursor: pointer;
-    }
+    } */
+
+    .toggle-dot {
+    /* Your dot styles (e.g., a small circle) */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #2c4964;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white; /* Add text color */
+    font-size: 7px; /* Adjust font size */
+    display: flex; /* Align "i" vertically */
+    align-items: center;
+    justify-content: center;
+}
     .side-nav-bar {
         display: none; /* Hide on mobile */
     }
@@ -152,7 +169,7 @@
   </header><!-- End Header -->
   <main>
   <section id="BlogPage1" class="d-flex align-items-center">
-    <div class="toggle-dot"></div>
+    <div class="toggle-dot">index</div>
     <div id="left" class="side-nav-bar">
       <h2>AWS</h2>
       <a class="nav-link scrollto active" href="#blog-content-1">Introduction to Cloud</a>
