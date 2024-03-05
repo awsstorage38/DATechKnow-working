@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<!-- adding tags to the blog using below meta flag-->
+  <meta name="CloudComputing" content="Learn CloudComputing">
+  <meta name="Cloud" content="blog, computing, cloud, AWS, GCP, Azure">
+  <meta name="DA-TechKnow" content="DA-TechKnow">
+
+  <title>DA-TechKnow - a Technical blog</title>
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    
+    main {
+            display: flex;
+            flex: 1;
+        }
+
+        #left {
+            flex: 1;
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+            height: 100%;
+            width: 150px;
+            margin-top: 20px;
+        }
+      
+        #middle {
+            flex: 3;
+            padding: 20px;
+            margin-top: 100px
+        }
+
+        #right {
+            flex: 1;
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-left: 1px solid #ddd;
+            height: 100%
+        }
+
+        .blog-content {
+        flex: 1;
+        background-color: #fff;
+        padding: 20px;
+        margin-right: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .blog-post {
+        flex: 1;
+        background-color: #fff;
+        padding: 20px;
+        margin-right: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .blog-content img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+   
+    @media (max-width: 768px) {
+            header {
+                text-align: center;
+            }
+
+            #blogpage {
+                flex-direction: column;
+            }
+
+            #middle {
+                flex: 1;
+                width: 100%;
+                border: none;
+            }
+
+            #left,#right {
+                padding: 10px;
+                display: none;
+            }
+
+            #middle {
+                padding: 20px;
+            }
+
+            .toggle-dot {
+        /* Your dot styles (e.g., a small circle) */
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        background-color: #5828df;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .side-nav-bar {
+        display: none; /* Hide on mobile */
+    }
+
+    #left.side-nav-bar.show-navbar{
+    display: block;
+}
+
+        }
+
+    
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">DA-TechKnow</a></h1>
+    
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="ansible.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="AWS.html">AWS</a></li>
+          <li><a class="nav-link scrollto" href="ansible.html">Ansible</a></li>       
+        <!--  <li><a class="nav-link scrollto" href="git.html">Git</a></li>       
+          <li><a class="nav-link scrollto" href="#oracle.html">Oracle</a></li>       
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+  </header><!-- End Header -->
+  <main>
+  <section id="BlogPage1" class="d-flex align-items-center">
+    <div class="toggle-dot"></div>
+    <div id="left" class="side-nav-bar">
+      <h2>Ansible</h2>
+      <a class="nav-link scrollto active" href="#blog-content-1">Introduction to Ansible</a>
+      <a class="nav-link scrollto active" href="#blog-content-2">Ansible Control and Managed Nodes</a>
+      <a class="nav-link scrollto active" href="#blog-content-3">Ansible Key Components</a>
+      <a class="nav-link scrollto active" href="#blog-content-4">Ansible Installation</a>
+      
+      <!--<a href="#">Item 3</a><br>
+      <a href="#">Item 3</a><br>
+      <a href="#">Item 3</a><br>
+      <a href="#">Item 3</a><br>-->
+
+  </div>
+  <div id="middle">
+    <!--<div>
+      <h2>We can add add here</h2>
+      <p>Ad content goes here.</p>
+  </div> -->
+     
+      <div class="blog-content">
+        <h2 id="blog-content-1">What is Ansible?</h2>
+      <!--  <img src="img/ho.jpg" alt="How to deploy"> -->
+      <!--  <p class="image-description">Description for the image goes here.</p> -->
+        <p><b>Ansible</b>
+          is an open-source automation tool for configuration management, enabling easy configuration of multiple networked servers simultaneously. It is commonly used for automating deployment, configuration management, and orchestration tasks in IT environments.
+        <br><br>
+          Ansible uses SSH to communicate with remote machines and does not require any agents to be installed on them, making it lightweight and easy to set up.
+          <br><br>
+          Ansible is suitable for heterogeneous environments. It can query servers to determine their operating systems and then use the appropriate commands to automate the tasks across different os, which helps in eliminating the need for manual command creation.
+          <br><br>
+          Puppet, Chef, and SaltStack are other popular configuration management and automation tools similar to Ansible.</p>
+          <!--  <img src="img/ho.jpg" alt="Ansible-deployment"> -->
+      </div>
+      <div class="blog-content">
+        <h2 id="blog-content-2">Ansible Control and Managed Nodes</h2>
+        <p><b>Control Node:</b>In Ansible, the control node is the machine where Ansible is installed and from which Ansible playbooks and commands are executed. <br><br>
+          <b>Managed Node:</b>Managed nodes, on the other hand, are the machines that are being managed by Ansible. Ansible does not require any agent software to be installed on managed nodes. <br>
+        </p>
+      </div>
+
+      <div class="blog-content">
+        <h2 id="blog-content-3">Ansible key components</h2>
+        <p>In Ansible, there are several key components and concepts that are important to understand:<br><br></p>
+        <ol>
+          <li><strong>Playbooks:</strong> Playbooks are YAML files that define a set of tasks to be executed on remote hosts. They can also include variables, handlers, and other Ansible components.</li>
+          <li><strong>Tasks:</strong> Tasks are the individual units of work in Ansible playbooks. They are actions that Ansible performs, such as installing a package, copying a file, or restarting a service.</li>
+          <li><strong>Roles:</strong> Roles are a way of organizing and reusing Ansible code. They encapsulate a set of tasks, variables, and files related to a specific function or application.</li>
+          <li><strong>Inventory:</strong> The inventory is a list of managed nodes (servers or devices) that Ansible can interact with. It can be static (defined in a file) or dynamic (generated by a script).</li>
+          <li><strong>Modules:</strong> Ansible modules are standalone scripts that Ansible uses to perform tasks on remote hosts. They can manage packages, files, services, and more.</li>
+          <li><strong>Handlers:</strong> Handlers are tasks that are only executed if they are notified by other tasks. They are typically used to restart services or perform other actions that should only occur when a change has been made.</li>
+          <li><strong>Facts:</strong> Facts are pieces of information about remote hosts that Ansible gathers and can use in playbooks. They include things like the operating system, IP address, and hardware details.</li>
+          <li><strong>Variables:</strong> Variables are used to customize playbooks and make them more flexible. They can be defined at various levels (e.g., playbook, role, inventory) and are used to parameterize tasks and templates.</li>
+          </ol>
+    </div> 
+
+    <div class="blog-content">
+      <h2 id="blog-content-4">Ansible Installation</h2>
+      <p>To install Ansible, you can follow these steps:</p>
+    <ol>
+        <li>On Linux: Ansible can be installed using the package manager of your distribution. For example, on Ubuntu, you can use:</li>
+        <pre><code>sudo apt update
+sudo apt install ansible</code></pre>
+        <li>On macOS: Ansible can be installed using Homebrew:</li>
+        <pre><code>brew install ansible</code></pre>
+        <li>On Windows: Ansible can be installed using the Windows Subsystem for Linux (WSL) or other methods compatible with Windows.</li>
+    </ol>
+    <p>Once installed, you can test your Ansible installation by running the following command:</p>
+    <pre><code>ansible --version</code></pre>
+    <p>Click <a href="https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#id5" target="_blank">here</a> to visit the official Ansible documentation page.</p>
+   
+  </div> 
+    
+    
+    
+    
+    
+      <!--
+    <div class="blog-content">
+      <h2>My Blog Post Title</h2>
+      <img src="img/home-0.jpg" alt="How to deploy">
+      <p class="image-description">Description for the image goes here.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+      <p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+      <p>Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac</p>
+  </div>
+
+      
+      <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+        </blockquote>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+          For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+          </blockquote>
+      <blockquote cite="http://www.worldwildlife.org/who/index.html">
+      For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+      </blockquote> -->
+  </div>
+  <div id="right">
+   <!--   <h2>Right Ad</h2>
+      <p>Ad content goes here.</p> -->
+  </div>
+  </section>
+</main>
+
+  <!-- ======= Footer ======= --> 
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>DA-TechKnow</h3>
+              <p>
+                <!--<strong>Phone:</strong> +1 00 00 0000<br>
+                <strong>Email:</strong> email@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://www.facebook.com/groups/577400563258704" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>  
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="ansible.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+<!--           <div class="col-lg-3 col-md-6 footer-links">
+           <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Extra Web Course</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Navbar Tutorial</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div> -->
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p></p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>DA-TechKnow</span></strong>. All Rights Reserved
+      </div>
+
+    </div> 
+  </footer><!-- End Footer -->
+
+<!--
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+-->
+  <!-- Vendor JS Files -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/purecounter/purecounter.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
