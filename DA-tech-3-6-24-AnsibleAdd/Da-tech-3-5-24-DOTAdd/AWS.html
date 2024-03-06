@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<!-- adding tags to the blog using below meta flag-->
+  <meta name="CloudComputing" content="Learn CloudComputing">
+  <meta name="Cloud" content="blog, computing, cloud, AWS, GCP, Azure">
+  <meta name="DA-TechKnow" content="DA-TechKnow">
+
+  <title>DA-TechKnow - a Technical blog</title>
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    
+    main {
+            display: flex;
+            flex: 1;
+        }
+
+        #left {
+            flex: 1;
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+            height: 100%;
+            width: 150px;
+            margin-top: 20px;
+        }
+      
+        #middle {
+            flex: 3;
+            padding: 20px;
+            margin-top: 100px
+        }
+
+        #right {
+            flex: 1;
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-left: 1px solid #ddd;
+            height: 100%
+        }
+
+        .blog-content {
+        flex: 1;
+        background-color: #fff;
+        padding: 20px;
+        margin-right: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .blog-post {
+        flex: 1;
+        background-color: #fff;
+        padding: 20px;
+        margin-right: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .blog-content img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+   
+    @media (max-width: 768px) {
+            header {
+                text-align: center;
+            }
+
+            #blogpage {
+                flex-direction: column;
+            }
+
+            #middle {
+                flex: 1;
+                width: 100%;
+                border: none;
+            }
+
+            #left,#right {
+                padding: 10px;
+                display: none;
+            }
+
+            #middle {
+                padding: 20px;
+            }
+
+    /*        .toggle-dot {
+        /* Your dot styles (e.g., a small circle) */
+   /*     position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        background-color: #5828df;
+        border-radius: 50%;
+        cursor: pointer;
+    } */
+
+    .toggle-dot {
+    /* Your dot styles (e.g., a small circle) */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #2c4964;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white; /* Add text color */
+    font-size: 7px; /* Adjust font size */
+    display: flex; /* Align "i" vertically */
+    align-items: center;
+    justify-content: center;
+}
+    .side-nav-bar {
+        display: none; /* Hide on mobile */
+    }
+
+    #left.side-nav-bar.show-navbar{
+    display: block;
+}
+
+        }
+
+    
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">DA-TechKnow</a></h1>
+    
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="AWS.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="AWS.html">AWS</a></li>
+          <li><a class="nav-link scrollto" href="ansible.html">Ansible</a></li>       
+        <!--  <li><a class="nav-link scrollto" href="git.html">Git</a></li>       
+          <li><a class="nav-link scrollto" href="#oracle.html">Oracle</a></li>       
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+  </header><!-- End Header -->
+  <main>
+  <section id="BlogPage1" class="d-flex align-items-center">
+    <div class="toggle-dot">index</div>
+    <div id="left" class="side-nav-bar">
+      <h2>AWS</h2>
+      <a class="nav-link scrollto active" href="#blog-content-1">Introduction to Cloud</a>
+      <a class="nav-link scrollto active" href="#blog-content-2">Types of Cloud Computing</a>
+      <a class="nav-link scrollto active" href="#blog-content-3">AWS Global Infrastructe</a><br>
+      <!--<a href="#">Item 3</a><br>
+      <a href="#">Item 3</a><br>
+      <a href="#">Item 3</a><br>
+      <a href="#">Item 3</a><br>-->
+
+  </div>
+  <div id="middle">
+    <div>
+   <!--   <h2>We can add add here</h2>
+      <p>Ad content goes here.</p> -->
+  </div> 
+     
+      <div class="blog-content">
+        <h2 id="blog-content-1">What is Cloud Computing?</h2>
+      <!--  <img src="img/ho.jpg" alt="How to deploy"> -->
+      <!--  <p class="image-description">Description for the image goes here.</p> -->
+        <p>Cloud computing is the on-demand delivery of IT resources over the internet with pay-as-you-go pricing. Instead of buying, owning, and maintaining physical data centers and servers, you can access thechnology services, such as computing power, storage and databases on an as-needed basis from a cloud provider like Amazon AWS/Google GCP/Microsoft Azure<br></p>
+        <img src="img/cloudc.jpg" alt="Cloud">
+        <br>  
+      </div>
+
+
+      <div class="blog-content">
+        <h2 id="blog-content-2">Types of Cloud Computing?</h2>
+      <!--  <img src="img/ho.jpg" alt="How to deploy"> -->
+      <!--  <p class="image-description">Description for the image goes here.</p> -->
+        <p>The three main types of cloud computing include: <br><br>Infrastructure as a Service <br>Platform as a Service and <br>Software as a Service. <br><br>Each type of cloud computing provides different levels of control, flexibility and management so that you can select the right set of services fr your needs.<br></p>
+        <br>  
+      </div>
+
+      <div class="blog-content">
+        <h2 id="blog-content-3">AWS Global Infrastructure</h2>
+      <!--  <img src="img/ho.jpg" alt="How to deploy"> -->
+      <!--  <p class="image-description">Description for the image goes here.</p> -->
+        <p>AWS Global infrastructure refers to the network of datacenters and edge locations around the world that AWS operate to deliver it's cloud computing services to AWS customers.<br></p>
+        <p> <b>DataCenter:</b> Data Center houses the server and network infrastructure to run its services.<br><br> <b>Availability Zone (AZ):</b> One or more Data Centers connected with each other with redundent fiber cables form AZ, for providing higher vailability, redundancy and fault tolerance.<br><br><b>Region:</b>  Region is a separate geographic area with multiple availability zones.  AZs are physically separate from each other but are connected by low-latency links. Example of region: us-east-1 (North Virginia) or eu-west-1 (Ireland).<br><br><b>Edge Location:</b> Edge locations are separate Infrastructe from regions. These Edge locations has connectivity to the other regions. Edge locations are rented rack or cage space from other providers. AWS rents them to provide web caching for customers to provide increased performance.<br><br><b>Local Zones:</b> This is anotehr interesting service of AWS Global Infrastructure. AWS had cusotmer requests for placing an AZ in a specific city to have single-digit millisecond latency. Since there is no rest of the region infrastructure to justify creating a region in that city. These Local Zones associated with other regions on the same continent. <br></p>
+        <br>  
+      </div>
+<!--
+  ***Use this for future updates***
+    <div class="blog-content">
+      <h2>My Blog Post Title</h2>
+      <img src="img/home-0.jpg" alt="How to deploy">
+      <p class="image-description">Description for the image goes here.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+      <p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+      <p>Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac</p>
+  </div>
+
+      
+      <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+        </blockquote>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+          For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+          </blockquote>
+      <blockquote cite="http://www.worldwildlife.org/who/index.html">
+      For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+      </blockquote> -->
+  </div>
+  <div id="right">
+   <!--   <h2>Right Ad</h2>
+      <p>Ad content goes here.</p> -->
+  </div>
+  </section>
+</main>
+
+  <!-- ======= Footer ======= --> 
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>DA-TechKnow</h3>
+              <p>
+                <!--<strong>Phone:</strong> +1 00 00 0000<br>
+                <strong>Email:</strong> email@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://www.facebook.com/groups/577400563258704" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>  
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="AWS.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+<!--           <div class="col-lg-3 col-md-6 footer-links">
+           <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Extra Web Course</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Navbar Tutorial</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div> -->
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p></p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>DA-TechKnow</span></strong>. All Rights Reserved
+      </div>
+
+    </div> 
+  </footer><!-- End Footer -->
+
+<!--
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+-->
+  <!-- Vendor JS Files -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/purecounter/purecounter.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
